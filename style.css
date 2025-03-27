@@ -1,0 +1,141 @@
+@font-face {
+	font-family: AthensClassic;
+	src: url("/assets/AthensClassic.ttf");
+}
+
+@font-face {
+	font-family: FreePixel;
+	src: url("/assets/FreePixel.ttf");
+}
+
+
+body
+{
+    background-color: black;
+    font-family: FreePixel, sans-serif;
+    padding: 0;
+
+    .tooltip {
+        position: relative;
+
+        cursor: default;
+        font-style: italic;
+      }
+      
+      .tooltip .tooltiptext {
+        opacity: 0;
+        visibility: hidden;
+        transition-delay: 0.3s;
+        transition:opacity 1s, visibility 1s;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        left: 50%;
+        margin-left: -60px;
+      }
+      
+      .tooltip:hover .tooltiptext {
+        opacity: 1;
+        visibility: visible;
+      }
+
+}
+
+.sidebartitle
+{
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+
+main
+{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+section
+{
+    background-color:white;
+    border: 3px solid gray;
+    margin-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#header
+{
+    font-family: AthensClassic, sans-serif;
+    font-size: 32px;
+    width: 60%;
+    text-align: center;
+    margin-top: 16px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+#container
+{
+    display: flex;
+    align-items: flex-start;
+}
+
+#mainbody
+{
+    max-width: 500px;
+    flex-grow: 3;
+}
+
+#sidebar
+{
+    margin-left: 32px;
+    width: 30%;
+    text-align: left;
+}
+
+h2
+{
+    margin-bottom: 4px;
+}
+
+.sidebaricon
+{
+    vertical-align: middle;
+    max-height: 20px;
+    max-width: 20px;
+    padding-right: 6px;
+    padding-bottom: 6px;
+    margin-left: -6px;
+}
+
+.sidebarlist
+{
+    margin-top: 0px;
+    padding-left: 12px;
+}
+
+#footer
+{
+    display: flex;
+}
+
+.blogimage
+{
+    object-fit: contain;
+    max-width: 100%;
+}
+
+.imagecaption
+{
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 0px;
+    text-align: center;
+}
