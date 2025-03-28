@@ -8,47 +8,23 @@
 	src: url("/assets/FreePixel.ttf");
 }
 
+.center
+{
+    text-align: center;
+}
 
 body
 {
     background-color: black;
     font-family: FreePixel, sans-serif;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-
-    .tooltip {
-        position: relative;
-
-        cursor: default;
-        font-style: italic;
-    }
-
-        .tooltip .tooltiptext {
-        opacity: 0;
-        visibility: hidden;
-        transition-delay: 0.3s;
-        transition:opacity 1s, visibility 1s;
-        width: 120px;
-        background-color: black;
-        color: #fff;
-        text-align: center;
-        border-radius: 6px;
-        padding: 5px 0;
-        
-        /* Position the tooltip */
-        position: absolute;
-        z-index: 1;
-        top: 100%;
-        left: 50%;
-        margin-left: -60px;
-    }
-
-    .tooltip:hover .tooltiptext {
-        opacity: 1;
-        visibility: visible;
-    }
-
+    width: 900px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
 }
 
 .sidebartitle
@@ -64,7 +40,7 @@ details > summary {
     box-shadow: 1px 1px 2px #bbbbbb;
     cursor: pointer;
     font-weight: bold;
-  }
+}
 section
 {
     background-color:white;
@@ -80,9 +56,8 @@ section
     font-size: 32px;
     width: 60%;
     text-align: center;
-    margin-top: 16px;
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -90,6 +65,7 @@ section
 {
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 #mainbody
@@ -141,10 +117,6 @@ h2
     padding-left: 12px;
 }
 
-#footer
-{
-    display: flex;
-}
 
 .blogimage
 {
