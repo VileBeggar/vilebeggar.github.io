@@ -70,13 +70,13 @@ section
 
 #mainbody
 {
-    width: 500px;
+    width: 600px;
 }
 
 #sidebar
 {
     margin-left: 32px;
-    width: 30%;
+    width: 20%;
     text-align: left;
 }
 
@@ -125,11 +125,17 @@ h2
     text-align: center;
 }
 
-.modal {
+.modal
+{
+    width:100%;
     object-fit: contain;
-	margin: 4px;
 	cursor: zoom-in;
-    width: 100%;
+}
+
+.button81
+{
+    width: 88px;
+    height: 31px;
 }
 
 video {
