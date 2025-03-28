@@ -14,15 +14,17 @@ body
     background-color: black;
     font-family: FreePixel, sans-serif;
     padding: 0;
+    display: flex;
+    justify-content: center;
 
     .tooltip {
         position: relative;
 
         cursor: default;
         font-style: italic;
-      }
-      
-      .tooltip .tooltiptext {
+    }
+
+        .tooltip .tooltiptext {
         opacity: 0;
         visibility: hidden;
         transition-delay: 0.3s;
@@ -40,12 +42,12 @@ body
         top: 100%;
         left: 50%;
         margin-left: -60px;
-      }
-      
-      .tooltip:hover .tooltiptext {
+    }
+
+    .tooltip:hover .tooltiptext {
         opacity: 1;
         visibility: visible;
-      }
+    }
 
 }
 
@@ -55,11 +57,14 @@ body
     margin-bottom: 0px;
 }
 
-main
-{
-    margin-left: 30%;
-    margin-right: 30%;
-}
+details > summary {
+    margin-bottom: 8px;
+    background-color: #eeeeee;
+    border: none;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    cursor: pointer;
+    font-weight: bold;
+  }
 section
 {
     background-color:white;
@@ -89,8 +94,7 @@ section
 
 #mainbody
 {
-    max-width: 500px;
-    flex-grow: 3;
+    width: 500px;
 }
 
 #sidebar
