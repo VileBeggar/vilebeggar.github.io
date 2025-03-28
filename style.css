@@ -117,17 +117,57 @@ h2
     padding-left: 12px;
 }
 
-
-.blogimage
-{
-    object-fit: contain;
-    max-width: 100%;
-}
-
 .imagecaption
 {
     font-style: italic;
     font-size: 14px;
     margin-top: 0px;
     text-align: center;
+}
+
+.modal {
+    object-fit: contain;
+	margin: 4px;
+	cursor: zoom-in;
+    width: 100%;
+}
+
+video {
+    object-fit: contain;
+	margin: 4px;
+    width: 100%;
+}
+
+#modal-popup {
+	visibility: hidden;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	position: fixed;
+	z-index: 1000;
+	background: transparent;
+	transition: 0.2s;
+	opacity: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#modal-popup.up {
+	visibility: visible;
+	background: rgba(0.0, 0.0, 0.0, 0.5);
+	opacity: 1;
+}
+
+#modal-popup > img,
+#modal-popup > video {
+	max-width: 80%;
+	max-height: 80%;
+}
+
+#modal-popup > p {
+	text-align: center;
+	word-wrap: break-word;
 }
