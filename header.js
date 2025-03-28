@@ -15,7 +15,7 @@ let appSidebar = `
   <h4 class = "sidebartitle"><img src="./assets/document.png" class="sidebaricon">Content:</h4>
   <ul class = "sidebarlist">
       <li><a href="./index.html">Main</a></li>
-      <li>Art</li>
+      <li><a href="./art.html">Art</a></li>
       <li><a href="./blog.html">Blog</a></li>
       <li><a href="https://vilebeggar.atabook.org/" target="_blank" rel="noopener noreferrer">Guestbook</a></li>
   </ul>
