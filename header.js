@@ -26,8 +26,6 @@ let appSidebar = `
   </ul>   
 `;
 
-document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("header").innerHTML = appHeader;
-    document.getElementById("footer").innerHTML = appFooter;
-    document.getElementById("sidebar").innerHTML = appSidebar;
-});
+document.getElementById("header").innerHTML = appHeader;
+document.getElementById("footer").innerHTML = appFooter;
+document.getElementById("sidebar").innerHTML = appSidebar;
