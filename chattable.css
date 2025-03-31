@@ -68,3 +68,11 @@ a {
 #is_typing > span {
   background-color: #333;
 }
+
+p.senderInfo.handyman {
+  color: green;
+}
+
+p.senderInfo.beggar {
+  color: darkblue;
+}
