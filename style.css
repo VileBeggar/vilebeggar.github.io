@@ -125,6 +125,21 @@ h2
     text-align: center;
 }
 
+.videocontainer
+{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.videobox
+{
+    width: 180px;
+    margin-right: 6px;
+    margin-bottom: 32px;
+    border: 5px black outset;
+}
+
 .modal
 {
     width:100%;

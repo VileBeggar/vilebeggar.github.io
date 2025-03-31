@@ -4,10 +4,13 @@ let appHeader = `
   <hr>
 `;
 
+const date = new Date(document.lastModified);
+const formattedDate = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
 
 let appFooter = `
-  Last updated: 28/03/2025
+  Last updated: ${formattedDate}  
 `;
+
 
 let appSidebar = `
   <h3>Sidebar</h3>
@@ -17,6 +20,7 @@ let appSidebar = `
       <li><a href="./index.html">Main</a></li>
       <li><a href="./art.html">Art</a></li>
       <li><a href="./blog.html">Blog</a></li>
+      <li><a href="./clips.html">Clips</a></li>
       <li><a href="https://vilebeggar.atabook.org/" target="_blank" rel="noopener noreferrer">Guestbook</a></li>
   </ul>
   <h4 class = "sidebartitle"><img src="./assets/smile.png" class="sidebaricon">Friends:</h4>
