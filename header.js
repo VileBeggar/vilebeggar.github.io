@@ -28,6 +28,10 @@ let appSidebar = `
       <li><a href="https://cantsleep.cc/">can't sleep</a></li>
   </ul>`;
 
+let appScafe = ` 
+<h3>UNDER CONSTRUCTION</h3>
+`
+
 chattable.initialize({
     stylesheet : "chattable.css"
 });
@@ -35,3 +39,5 @@ chattable.initialize({
 document.getElementById("header").innerHTML = appHeader;
 document.getElementById("footer").innerHTML = appFooter;
 document.getElementById("sidebar").innerHTML = appSidebar;
+document.getElementById("scafe").innerHTML = appScafe;
+

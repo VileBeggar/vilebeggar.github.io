@@ -8,6 +8,10 @@
 	src: url("/assets/FreePixel.ttf");
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .center
 {
     text-align: center;
@@ -17,18 +21,11 @@ body
 {
     background-color: black;
     font-family: FreePixel, sans-serif;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 1300px;
+    padding: 0;
+    width: 1500px;
     margin: 0 auto;
 }
 
-#chatbar
-{
-
-}
 .sidebartitle
 {
     margin-top: 12px;
@@ -67,8 +64,8 @@ section
 #container
 {
     display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap row;
     gap: 10px;
 }
 
@@ -86,8 +83,20 @@ section
 
 #sidebar
 {
-    width: 150px;
+    width: 200px;
+    margin-right:100px;
     text-align: left;
+    height:300px;
+}
+
+#chattable
+{
+    width: 300px;
+}
+
+#chatbar
+{
+    width:300px;
 }
 
 h2
