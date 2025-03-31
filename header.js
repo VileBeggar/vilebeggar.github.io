@@ -8,9 +8,8 @@ const date = new Date(document.lastModified);
 const formattedDate = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
 
 let appFooter = `
-  Last updated: ${formattedDate}  
+  Last updated: ${formattedDate} | Source code: <a href="https://github.com/VileBeggar/vilebeggar.github.io" target=_blank>https://github.com/VileBeggar/vilebeggar.github.io</a>
 `;
-
 
 let appSidebar = `
   <h3>Sidebar</h3>
@@ -27,8 +26,11 @@ let appSidebar = `
   <ul class = "sidebarlist">
       <li><a href="https://nonk.dev/">nonk</a></li>
       <li><a href="https://cantsleep.cc/">can't sleep</a></li>
-  </ul>   
-`;
+  </ul>`;
+
+chattable.initialize({
+    stylesheet : "chattable.css"
+});
 
 document.getElementById("header").innerHTML = appHeader;
 document.getElementById("footer").innerHTML = appFooter;
