@@ -161,8 +161,8 @@ h2
 }
 .videobox > img
 {
-    width: 180px;
-    height: 100px
+    width: 170px;
+    max-height: 100px;
 }
 
 .modal
